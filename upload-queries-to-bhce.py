@@ -19,7 +19,7 @@ def send_query(name, query, description=""):
         "accept": "application/json",
         "Prefer": "0",
         "Content-Type": "application/json",
-        "Authorization": API_TOKEN,
+        "Authorization": f"Bearer {API_TOKEN}",
     }
     payload = {
         "name": name,
